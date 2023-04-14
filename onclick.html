@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img id="light" src='off.png' alt="">
+    <br>
+    <button id="switch" onclick="controLight()">Turn on</button>
+    <script>
+        function controLight(){
+           if(document.getElementById('switch').innerText == 'Turn on'){
+            document.getElementById('light').src ='on.png';
+            document.getElementById('switch').innerText = 'Turn off';
+           }
+           else{
+            document.getElementById('light').src = 'off.png';
+            document.getElementById('switch').innerText = "Turn on";
+           }
+        }
+    </script>
+</body>
+</html>
